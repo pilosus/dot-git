@@ -1,0 +1,32 @@
+[init]
+	defaultBranch = main
+[core]
+	editor = emacs
+[commit]
+        gpgsign = true
+[user]
+	name = Vitaly Samigullin
+	email = vrs@pilosus.org
+	signingkey = C9E0916F64920CAE513CE3283BAB159D886263E1
+[gpg]
+        program = /usr/bin/gpg
+[color]
+	ui = true
+[pager]
+	branch = false
+[push]
+	autoSetupRemote = true
+	default = current
+[alias]
+	graph = log --graph --oneline --decorate
+        am = commit --amend
+	co = checkout
+	cm = commit
+	st = status
+	br = branch
+        p = push
+        pf = push --force-with-lease
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+        undo = reset HEAD~1 --mixed
