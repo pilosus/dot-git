@@ -1,0 +1,6 @@
+# -*- mode: conf -*-
+# Work-related email and GPG key
+
+[user]
+	email = vitaly.samigullin@anna.money
+	signingkey = 887EE2D04EE17336F4B9029FFA54555C43B304A5

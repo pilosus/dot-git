@@ -1,0 +1,5 @@
+# -*- mode: conf -*-
+# Personal email and GPG key
+[user]
+	email = vrs@pilosus.org
+	signingkey = C9E0916F64920CAE513CE3283BAB159D886263E1

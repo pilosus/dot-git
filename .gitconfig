@@ -8,8 +8,14 @@
         gpgsign = true
 [user]
 	name = Vitaly Samigullin
-	email = vrs@pilosus.org
-	signingkey = C9E0916F64920CAE513CE3283BAB159D886263E1
+	useConfigOnly = true
+
+[include]
+  path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/git/github.com/anna-money/"]
+  path = ~/.gitconfig.work
+
 [gpg]
         program = /usr/local/bin/gpg
 [color]
